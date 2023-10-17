@@ -1,0 +1,249 @@
+/* Importação da fonte Oxanium */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset de estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body {
+  text-align: center;
+  min-height: 100vh;
+}
+
+main {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+}
+
+.pokedex {
+  width: 100%;
+  max-width: 425px;
+}
+
+.pokemon__image {
+  position: absolute;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-63%, 20%);
+  height: 18%;
+}
+
+.pokemon__data {
+  position: absolute;
+  font-weight: 600;
+  color: #aaa;
+  top: 54.5%;
+  right: 27%;
+  font-size: clamp(8px, 5vw, 25px);
+}
+
+.pokemon__name {
+  color: #3a444d;
+  text-transform: capitalize;
+}
+
+.form {
+  position: absolute;
+  width: 65%;
+  top: 65%;
+  left: 13.5%;
+}
+
+.input__search {
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
+
+/* Barra de navegação no topo */
+.navbar-top {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Conteúdo da página */
+.content {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; /* Garante que a largura total inclua padding */
+}
+
+
+/* Rodapé */
+.rodape {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  padding: 24px;
+  font-family: 'Oxanium', cursive;
+  position: absolute; /* Alterado para 'absolute' */
+  bottom: 0; /* Ajuste para '0' */
+  width: 100%;
+}
+
+
+
+/* Cabeçalho e Menu */
+.cabecalho {
+  padding: 2% 0% 0% 19%;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho__menu__link {
+  font-family: 'Oxanium', cursive;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  text-decoration: none;
+}
+
+.apresentacao{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 9% 21%;
+
+  gap:40px;
+  
+}
+.apresentacao__conteudo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  
+}
+.apresentacao__conteudo__titulo{
+  font-size: 2.25rem;
+  font-family: var(--fonte-principal);
+  text-align: center;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 2.25rem;
+  font-family: var(--fonte-principal);
+  text-align: center;
+}
+
+/* Media Queries para telas menores */
+@media only screen and (max-width: 768px) {
+  .pokedex {
+    max-width: 100%;
+  }
+
+  .pokemon__image {
+    bottom: 50%; /* Ajustando a posição da imagem do Pokémon */
+    transform: translateX(-50%) translateY(50%); /* Ajustando a posição central */
+    top: 100px;
+    position: absolute;
+  }
+
+  .pokemon__data {
+    top: 50%; /* Ajustando a posição dos dados do Pokémon */
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    font-size: 18px; /* Ajustando o tamanho da fonte */
+  }
+  .input__search {
+    width: 60%;
+    left: 20px;
+    position: absolute;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: none; /* Removendo a sombra no resposivo */
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .input__search {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .buttons {
+    width: 50%;
+  }
+
+  .button {
+    width: 48%;
+  }
+
+  .cabecalho {
+    padding: 2% 0% 0% 5%;
+  }
+
+  .cabecalho__menu {
+    gap: 10px;
+    flex-direction: column; /* Colocando os itens do menu em uma coluna */
+    align-items: center; /* Centralizando os itens do menu */
+  }
+
+  .apresentacao {
+    padding: 5% 5% 10% 5%; /* Ajustando o padding */
+  }
+
+  .apresentacao__conteudo {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .apresentacao__conteudo__titulo {
+    font-size: 1.8rem; /* Ajustando o tamanho da fonte */
+  }
+
+  .rodape {
+    position: static; /* Removendo a posição absoluta */
+    width: 100%;
+    padding: 30px;
+    margin-top: 150px; /* Adicionando um espaço superior */
+  }
+
+}

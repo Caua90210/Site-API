@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicons/favicon-16x16.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/script.js"></script>
+
+  <title>Pokédex</title>
+
+  <style>
+    body {
+      text-align: center;
+      background-image: url('./images/ash.png'); /* Substitua pelo caminho real da sua imagem */
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="cabecalho__menu">
+        <a class="cabecalho__menu__link" href="index.html">Home</a>
+        <a class="cabecalho__menu__link" href="about.html">About</a>
+    </nav>
+</header>
+  <main>
+    <img src="#" alt="pokemon" class="pokemon__image">
+
+    <h1 class="pokemon__data">
+      <span class="pokemon__number"></span> -
+      <span class="pokemon__name"></span>
+    </h1>
+
+    <form class="form">
+      <input
+        type="search"
+        class="input__search"
+        placeholder="Name or Number"
+        required
+      />
+    </form>
+
+    <div class="buttons">
+      <button class="button btn-prev">Prev &lt;</button>
+      <button class="button btn-next">Next &gt;</button>
+    </div>
+
+    <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+
+  
+
+  </main>
+<footer>
+  
+    <!-- Barra de Rodapé -->
+    <div class="rodape">
+      <p>Desenvolvido por Cauã da Silva</p>
+    </div>
+  
+</footer>
+</body>
+</html>
